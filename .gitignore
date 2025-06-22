@@ -5,7 +5,7 @@
 .cxx
 
 # --- Android Studio & IntelliJ IDEA ---
-.idea/
+.idea/*
 *.iml
 *.ipr
 *.iws
