@@ -34,5 +34,6 @@ include(":core:network")
 include(":core:analytics")
 include(":core:database")
 include(":core:persistence")
+include(":core:designsystem")
 
 
