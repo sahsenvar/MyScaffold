@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.sahsenvar.ms_catalog"
+    namespace = "com.sahsenvar.app_catalog"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.sahsenvar.ms_catalog"
+        applicationId = "com.sahsenvar.app_catalog"
         minSdk = 29
         targetSdk = 36
         versionCode = 1

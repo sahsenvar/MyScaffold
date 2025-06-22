@@ -1,14 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":build-logic")
-
-
-include(":core:network")
-
-
-include(":ms-catalog")
-
-
 pluginManagement {
     repositories {
         google {
@@ -32,4 +23,7 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyScaffold"
 include(":app")
- 
+include(":app-catalog")
+
+include(":core:network")
+include(":build-logic")

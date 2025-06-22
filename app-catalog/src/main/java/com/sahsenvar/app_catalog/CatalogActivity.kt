@@ -1,4 +1,4 @@
-package com.sahsenvar.ms_catalog
+package com.sahsenvar.app_catalog
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
