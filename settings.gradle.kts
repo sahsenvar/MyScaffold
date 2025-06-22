@@ -1,5 +1,8 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":ms-catalog")
+
+
 pluginManagement {
     repositories {
         google {
