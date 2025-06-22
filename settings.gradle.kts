@@ -30,8 +30,9 @@ include(":app-catalog")
 include(":build-logic")
 
 // Core Modules
-include(":core:network")
 include(":core:analytics")
+include(":core:common")
+include(":core:network")
 include(":core:database")
 include(":core:persistence")
 include(":core:designsystem")
