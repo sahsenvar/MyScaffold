@@ -35,5 +35,6 @@ include(":core:analytics")
 include(":core:database")
 include(":core:persistence")
 include(":core:designsystem")
-
-
+include(":core:data")
+include(":core:domain")
+include(":core:ui")
