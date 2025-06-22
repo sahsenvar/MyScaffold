@@ -1,15 +1,97 @@
-*.iml
 .gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
 /build
 /captures
 .externalNativeBuild
 .cxx
+
+# --- Android Studio & IntelliJ IDEA ---
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# --- Gradle ---
+.gradle/
+build/
+!*/src/main/**/build/
+/local.properties
+/.gradle
+/captures/
+/output/
+
+# --- Android Build ---
+/build/
+/app/build/
+/*/build/
+*.apk
+*.ap_
+*.aab
+
+# --- External Native Build ---
+.externalNativeBuild/
+.cxx/
+
+# --- Logs & OS Files ---
+*.log
+.DS_Store
+*.swp
+*.swo
+*~
+# --- Keystore & Signing ---
+*.jks
+*.keystore
+*.pem
+*.key
+
+# --- Crashlytics/Fabric ---
+crashlytics.properties
+crashlytics-build.properties
+fabric.properties
+
+# --- Google Services ---
+google-services.json
+app/google-services.json
+
+# --- Misc (Android Test outputs) ---
+/outputs/
+captures/
+
+# --- NDK/CMakelists/Bazel/other native ---
+/.externalNativeBuild
+/.cxx
+/cmake-build-debug/
+/cmake-build-release/
+
+# --- VS Code & Other Editors ---
+.vscode/
+*.code-workspace
+
+# --- SonarQube ---
+/sonar/
+
+# --- Fastlane ---
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+# --- Firebase ---
+.firebase/
+
+# --- Lint & Annotation ---
+lint/intermediates/
+lint/generated/
+
+# --- Misc ---
+*.orig
+*.bak
+*.tmp
+*.temp
+
+# --- Local configuration files ---
 local.properties
+
+# --- Mac/Windows/Linux System files ---
+ehthumbs.db
+Icon?
+Thumbs.db
