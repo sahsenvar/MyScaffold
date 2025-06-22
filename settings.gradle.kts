@@ -32,4 +32,6 @@ include(":build-logic")
 // Core Modules
 include(":core:network")
 include(":core:analytics")
+include(":core:database")
+
 
