@@ -1,5 +1,11 @@
 @file:Suppress("UnstableApiUsage")
 
+include(":build-logic")
+
+
+include(":core:network")
+
+
 include(":ms-catalog")
 
 
