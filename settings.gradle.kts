@@ -22,12 +22,12 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "MyScaffold"
+// composite build
+includeBuild("build-logic")
+
 // Apps
 include(":app")
 include(":app-catalog")
-
-// Composite build
-include(":build-logic")
 
 // Core Modules
 include(":core:analytics")
