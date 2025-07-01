@@ -27,8 +27,6 @@ dependencies {
     compileOnly(libs.buildLogic.android.tools.gradlePlugin)
     compileOnly(libs.buildLogic.kotlin.gradlePlugin)
     compileOnly(libs.buildLogic.kotlin.compose.gradlePlugin)
-    //compileOnly(libs.android.tools.common)
-    //compileOnly(libs.kotlin.gradlePlugin)
 }
 
 tasks.register("generateGenLib", GenerateGenLibTask::class.java)
@@ -55,6 +53,12 @@ gradlePlugin {
             id = libs.plugins.myScaffold.android.application.compose.get().pluginId
             implementationClass = "AndroidApplicationComposeConventionPlugin"
         }
+
+        register("AndroidLibraryConventionPlugin") {
+            id = libs.plugins.myScaffold.android.library.get().pluginId
+            implementationClass = "AndroidLibraryConventionPlugin"
+        }
+
     }
 }
 

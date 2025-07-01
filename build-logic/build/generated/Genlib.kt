@@ -24,6 +24,8 @@ object genlibs {
 		const val composeBom = "2025.06.01"
 		const val appcompat = "1.7.1"
 		const val material = "1.12.0"
+		const val androidxTracing = "1.3.0"
+		const val jetbrainsKotlinJvm = "2.2.0"
 	}
 
 	object plugins {
@@ -31,17 +33,16 @@ object genlibs {
 		const val kotlin_android = "org.jetbrains.kotlin.android"
 		const val kotlin_compose = "org.jetbrains.kotlin.plugin.compose"
 		const val android_library = "com.android.library"
+		const val jetbrains_kotlin_jvm = "org.jetbrains.kotlin.jvm"
 		const val myScaffold_android_application = "myScaffold.android.application"
 		const val myScaffold_android_application_compose = "myScaffold.android.application.compose"
+		const val myScaffold_android_library = "myScaffold.android.library"
 	}
 
 	const val android_desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${Versions.androidDesugarJdkLibs}"
 	const val androidx_core_ktx = "androidx.core:core-ktx:${Versions.coreKtx}"
-	const val junit = "junit:junit:${Versions.junit}"
-	const val androidx_junit = "androidx.test.ext:junit:${Versions.junitVersion}"
-	const val androidx_espresso_core = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
-	const val androidx_lifecycle_runtime_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"
 	const val androidx_appcompat = "androidx.appcompat:appcompat:${Versions.appcompat}"
+	const val androidx_tracing_ktx = "androidx.tracing:tracing-ktx:${Versions.androidxTracing}"
 	const val compose_bom = "androidx.compose:compose-bom:${Versions.composeBom}"
 	const val compose_ui = "androidx.compose.ui:ui"
 	const val compose_ui_graphics = "androidx.compose.ui:ui-graphics"
@@ -52,6 +53,11 @@ object genlibs {
 	const val compose_material3 = "androidx.compose.material3:material3"
 	const val compose_activity = "androidx.activity:activity-compose:${Versions.activityCompose}"
 	const val material = "com.google.android.material:material:${Versions.material}"
+	const val kotlin_test = "org.jetbrains.kotlin:kotlin-test:${Versions.kotlin}"
+	const val junit = "junit:junit:${Versions.junit}"
+	const val androidx_junit = "androidx.test.ext:junit:${Versions.junitVersion}"
+	const val androidx_espresso_core = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
+	const val androidx_lifecycle_runtime_ktx = "androidx.lifecycle:lifecycle-runtime-ktx:${Versions.lifecycleRuntimeKtx}"
 	const val buildLogic_android_tools_gradlePlugin = "com.android.tools.build:gradle::${Versions.agp}"
 	const val buildLogic_android_tools_common = "com.android.tools:common::${Versions.androidTools}"
 	const val buildLogic_kotlin_compose_gradlePlugin = "org.jetbrains.kotlin:compose-compiler-gradle-plugin::${Versions.kotlin}"
