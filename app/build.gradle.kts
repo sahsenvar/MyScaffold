@@ -12,8 +12,8 @@ android {
         versionCode = genlibs.Versions.versionCode.toInt()
         versionName = genlibs.Versions.versionName
     }
-}
 
+}
 
 dependencies {
     implementation(libs.androidx.core.ktx)

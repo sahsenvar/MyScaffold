@@ -44,11 +44,19 @@ class AndroidApplicationConventionPlugin : Plugin<Project> {
                 debug {
                     isDebuggable = true
                     applicationIdSuffix = AppBuildType.Debug.applicationIdSuffix
-                    packaging.jniLibs.keepDebugSymbols.add("**/libandroidx.graphics.path.so") // added to solve this: https://github.com/mostafaalagamy/Metrolist/issues/544
                 }
             }
 
-            testOptions.apply {
+            packaging {
+                resources {
+                    excludes.add("/META-INF/{AL2.0,LGPL2.1}") // to avoid Licence conflicts and reduce app size
+                }
+                jniLibs {
+                    keepDebugSymbols.add("**/libandroidx.graphics.path.so") // to solve this problem to increase build speed: https://github.com/mostafaalagamy/Metrolist/issues/544
+                }
+            }
+
+            testOptions {
                 animationsDisabled = true
             }
         }
