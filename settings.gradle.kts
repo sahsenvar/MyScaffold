@@ -1,8 +1,5 @@
 @file:Suppress("UnstableApiUsage")
 
-include(":core:model")
-
-
 pluginManagement {
     repositories {
         google {
@@ -37,10 +34,11 @@ include(":app-catalog")
 // Core Modules
 include(":core:analytics")
 include(":core:common")
-include(":core:network")
-include(":core:database")
-include(":core:persistence")
-include(":core:designsystem")
 include(":core:data")
+include(":core:database")
+include(":core:designsystem")
 include(":core:domain")
+include(":core:model")
+include(":core:network")
+include(":core:persistence")
 include(":core:ui")
