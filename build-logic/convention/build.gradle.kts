@@ -59,6 +59,11 @@ gradlePlugin {
             implementationClass = "AndroidLibraryConventionPlugin"
         }
 
+        register("JvmLibraryConventionPlugin") {
+            id = libs.plugins.myScaffold.jvm.library.get().pluginId
+            implementationClass = "JvmLibraryConventionPlugin"
+        }
+
     }
 }
 

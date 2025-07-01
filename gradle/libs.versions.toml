@@ -66,4 +66,5 @@ jetbrains-kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "jetbrai
 myScaffold-android-application = { id = "myScaffold.android.application"}
 myScaffold-android-application-compose = {id = "myScaffold.android.application.compose"}
 myScaffold-android-library = { id = "myScaffold.android.library"}
+myScaffold-jvm-library = { id = "myScaffold.jvm.library"}
 
