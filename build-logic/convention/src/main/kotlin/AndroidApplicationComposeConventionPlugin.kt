@@ -45,19 +45,18 @@ class AndroidApplicationComposeConventionPlugin : Plugin<Project> {
 
         // make compose compiler metric analyse.(read README.md for more info)
         extensions.configure<ComposeCompilerGradlePluginExtension> {
-
-            fun Boolean.relativeToRootProject(dir: String) = project.provider { this }.map {
+            fun relativeToRootProject(dir: String) = project.provider { this }.map {
                 isolated.rootProject.projectDirectory
                     .dir("build")
                     .dir(projectDir.toRelativeString(rootDir))
             }.map { it.dir(dir) }
 
             providers.gradlePropertyAsTyped<Boolean>("enableComposeCompilerMetrics")
-                ?.relativeToRootProject("compose-metrics")
+                ?.let { relativeToRootProject("compose-metrics") }
                 ?.let(metricsDestination::set)
 
             providers.gradlePropertyAsTyped<Boolean>("enableComposeCompilerReports")
-                ?.relativeToRootProject("compose-reports")
+                ?.let { relativeToRootProject("compose-reports") }
                 ?.let(reportsDestination::set)
 
             stabilityConfigurationFiles
