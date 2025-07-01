@@ -37,6 +37,7 @@ object genlibs {
 		const val myScaffold_android_application = "myScaffold.android.application"
 		const val myScaffold_android_application_compose = "myScaffold.android.application.compose"
 		const val myScaffold_android_library = "myScaffold.android.library"
+		const val myScaffold_jvm_library = "myScaffold.jvm.library"
 	}
 
 	const val android_desugarJdkLibs = "com.android.tools:desugar_jdk_libs:${Versions.androidDesugarJdkLibs}"
